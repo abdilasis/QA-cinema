@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>QA Cinema</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%/2;
+  }
+
+  .mt-10{
+    margin-top: 20px;
+  }
+
+  body{
+    background-color: black;
+    color:white;
+  }
+  .filmTimes{
+    margin-top: 50px;
+    margin-left: 10px;
+
+  }
+  .filmtime{
+    border: 1px solid grey;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding:10px;
+  }
+  .font-light{
+    font-weight: lighter;
+    font-style: oblique;
+    color: grey;
+  }
+  .font-lighter{
+    font-weight: 600;
+    color:DarkGrey;
+  }
+  .navbar-brand{
+    margin-right:700px;
+
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand paddingRight" href="#">QA Cinema</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/snow.png" alt="Los Angeles" height="400">
+      <div class="carousel-caption">
+        <h3>Coming Soon</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/mountains.png" alt="Chicago" height="400" >
+      <div class="carousel-caption">
+        <h3>Coming Soon</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/red.png" alt="New York" height ="400" >
+      <div class="carousel-caption">
+        <h3>Coming Soon</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div class="media mt-10">
+ <img class="mr-3" src="img/Deadpool2.png" alt="Generic placeholder image">
+ <div class="media-body">
+   <h4 class="mt-0">DEADPOOL 2</h4>
+   <p class ="font-lighter">The world’s most unconventional superhero returns to battle ninjas and metal men in the highly-anticipated sequel to Deadpool. Wade Wilson (Ryan Reynolds) is back and this time he’s got a whole new set of problems. Not only is he struggling to get to grips with life in an open relationship, but also finds himself battling a variety of new villains who range from ninjas to metal men.</p>
+   <p class ="mt-10">Starring <span class ="font-light">Ryan Reynolds, Josh Brolin, Zazie Beetz, Brianna Hildebrand, Morena Baccarin</span></p>
+   <p>Running time <span class ="font-light">1hr 59mins</span></p>
+ </div>
+
+</div>
+<div class = "row filmTimes" id = "film1">
+  <div class = "col-md-2 filmtime ">1:00 PM</div>
+  <div class = "col-md-2 filmtime ">2:00 PM</div>
+  <div class = "col-md-2 filmtime ">5:00 PM</div>
+  <div class = "col-md-2 filmtime ">7:00 PM</div>
+  <div class = "col-md-2 filmtime ">8:00 PM</div>
+  <div class = "col-md-2 filmtime ">10:00 PM</div>
+
+</div>
+
+<hr></hr>
+
+<div class="media mt-10">
+ <img class="mr-3" src="img/Avengers.png" alt="Generic placeholder image">
+ <div class="media-body">
+   <h4 class="mt-0">AVENGERS: INFINITY WAR</h4>
+   <p class ="font-lighter">The Avengers are called on to defeat the twisted Thanos, who is scheming to alter reality with the Infinity Stones so he can destroy mankind. ‘’It started with an idea… Bring together a group of remarkable people to see if we could become something more.’’ If ever there was a time when the world needed superheroes, it’s now. Thanos (Josh Brolin) is on his way, and each Avenger can feel an impending sense of doom creeping across the globe. On a mission to collect all the Infinity Stones, Thanos aims to harness their extraordinary power to bend reality and ultimately obliterate Earth and every living creature on it..</p>
+   <p class ="mt-10">Starring <span class ="font-light"> Robert Downey Jr., Chris Pratt, Scarlett Johansson, Chris Evans, Chris Hemsworth, Josh Brolin</span></p>
+   <p>Running time <span class ="font-light">2hrs 29mins</span></p>
+ </div>
+
+</div>
+<div class = "row filmTimes" id ="film2">
+  <div class = "col-md-2 filmtime">1:00 PM</div>
+  <div class = "col-md-2 filmtime">2:00 PM</div>
+  <div class = "col-md-2 filmtime">5:00 PM</div>
+  <div class = "col-md-2 filmtime">7:00 PM</div>
+  <div class = "col-md-2 filmtime">8:00 PM</div>
+  <div class = "col-md-2 filmtime">10:00 PM</div>
+
+</div>
+
+<hr></hr>
+
+<div class="media mt-10">
+ <img class="mr-3" src="img/rampage.png" alt="Generic placeholder image">
+ <div class="media-body">
+   <h4 class="mt-0">RAMPAGE</h4>
+   <p class ="font-lighter">Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth. But a rogue genetic experiment mutates this gentle ape into a raging creature of enormous size.</p>
+   <p class ="mt-10">Starring <span class ="font-light">Dwayne Johnson, Jeffrey Dean Morgan, Malin Akerman</span></p>
+   <p>Running time <span class ="font-light">1hr 47mins</span></p>
+ </div>
+
+</div>
+<div class = "row filmTimes" id = "film3">
+  <div class = "col-md-2 filmtime">1:00 PM</div>
+  <div class = "col-md-2 filmtime">2:00 PM</div>
+  <div class = "col-md-2 filmtime">5:00 PM</div>
+  <div class = "col-md-2 filmtime">7:00 PM</div>
+  <div class = "col-md-2 filmtime">8:00 PM</div>
+  <div class = "col-md-2 filmtime">10:00 PM</div>
+
+</div>
+
+<hr></hr>
+
+
+<script>
+
+  document.getElementById("film1").onclick = function(){
+
+    location = "booking.html";
+ }
+
+ document.getElementById("film2").onclick = function(){
+
+   location = "booking2.html";
+}
+
+document.getElementById("film3").onclick = function(){
+
+  location = "booking3.html";
+}
+
+
+</script>
+
+</body>
+</html>
